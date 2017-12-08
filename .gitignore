@@ -12,6 +12,10 @@
 # misc
 /app/.DS_Store
 /app/.env
+/app/.env.development.local
+/app/.env.test.local
+/app/.env.production.local
+
 /app/npm-debug.log
 /app/package-lock.json
 /.idea
