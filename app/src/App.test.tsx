@@ -10,3 +10,8 @@ it('should make proper calculus', () => {
     let a = 1 + 2;
     expect(a).toBe(3);
 });
+
+it('should make proper concat', () => {
+    let a = "1" + "a";
+    expect(a).toBe("1a");
+});
