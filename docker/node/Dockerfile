@@ -9,4 +9,6 @@ RUN groupmod -g 1000 node \
 
 USER node
 
+WORKDIR /home/nodejs
+
 ENTRYPOINT ["/entrypoint.sh"]

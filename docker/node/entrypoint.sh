@@ -1,2 +1,2 @@
 #!/bin/bash
-bash -c  "cd /home/nodejs && npm install && npm start"
+bash -c  "npm install && npm start"
