@@ -24,9 +24,11 @@
     "start": "npm-run-all -p watch-css start-ts",
     "build": "npm-run-all build-css build-ts",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "eject": "react-scripts-ts eject",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "devDependencies": {
+    "@storybook/react": "^3.2.17",
     "@types/enzyme": "3.1.5",
     "@types/enzyme-adapter-react-16": "^1.0.1",
     "@types/jest": "21.1.8",
@@ -34,6 +36,7 @@
     "@types/react": "16.0.28",
     "@types/react-dom": "16.0.3",
     "@types/react-redux": "5.0.6",
+    "awesome-typescript-loader": "^3.4.1",
     "enzyme": "3.2.0",
     "enzyme-adapter-react-16": "1.1.0",
     "node-sass-chokidar": "0.0.3",
