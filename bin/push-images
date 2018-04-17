@@ -15,7 +15,11 @@ fi
 
 VERSION=$1
 
-${DOCKER} build -t localhost:5000/typescript-react-app/client/nginx:latest -f ${PROJECT_PATH}/docker/nginx/Dockerfile ${PROJECT_PATH} --no-cache
+${DOCKER} build -t localhost:5000/typescript-react-app/client/nginx:latest \
+                -f ${PROJECT_PATH}/docker/nginx/Dockerfile ${PROJECT_PATH} \
+                --build-arg USER_ID=1000 \
+                --build-arg GROUP_ID=1000 \
+                --no-cache
 
 ${DOCKER} tag localhost:5000/typescript-react-app/client/nginx:latest localhost:5000/typescript-react-app/client/nginx:${VERSION}
 

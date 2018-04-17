@@ -2,7 +2,6 @@ version: '3'
 services:
   nginx:
     image: localhost:5000/typescript-react-app/client/nginx
-    restart: always
     networks:
       - gateway
     deploy:
@@ -14,7 +13,7 @@ services:
         - "traefik.docker.network=traefik_gateway"
         - "traefik.port=80"
         - "traefik.frontend.rule=Host:typescriptreactapp.lambdaloopers.com"
-        - "traefik.backend=residencia-palau-client"
+        - "traefik.backend=typescriptreactapp"
 
 networks:
   gateway:
